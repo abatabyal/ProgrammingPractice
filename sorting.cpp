@@ -44,7 +44,7 @@ void printArrayFloat(float a[], int n) {
 
 int BinarySearch(int A[], int data, int low, int high) {
 	if(high >=low) {
-		int mid=(low+high)/2;
+		int mid= (low+(high-low))/2;
 		if(A[mid]==data)
 			return mid;
 		else if (A[mid]>data)
